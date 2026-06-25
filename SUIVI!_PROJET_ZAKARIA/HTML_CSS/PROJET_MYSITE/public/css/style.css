@@ -1,0 +1,224 @@
+/* ==============================
+   RÉINITIALISATION GÉNÉRALE
+============================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==============================
+   STYLE GÉNÉRAL DE LA PAGE
+============================== */
+
+body{
+    background-color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    padding:40px;
+}
+
+/* Titres principaux */
+
+h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+/* ==============================
+   SECTION SERVICES
+============================== */
+
+.services{
+
+    /* Activation du système Grid */
+    display:grid;
+
+    /* 3 colonnes de même largeur */
+    grid-template-columns:repeat(3,1fr);
+
+    /* Espacement entre les blocs */
+    gap:20px;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    margin-bottom:100px;
+}
+
+/* Carte de service */
+
+.service{
+
+    background-color:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    /* Ombre légère */
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.service h3{
+    margin-bottom:10px;
+}
+
+/* ==============================
+   SECTION PRODUITS
+============================== */
+
+.produits{
+    max-width:1100px;
+    margin:auto;
+    margin-bottom:100px;
+}
+
+/* Grille des produits */
+
+.grille-produits{
+
+    display:grid;
+
+    /* 4 colonnes égales */
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+}
+
+/* Carte produit */
+
+.carte{
+
+    background-color:white;
+
+    border-radius:10px;
+
+    /* Cache le contenu qui dépasse */
+    overflow:hidden;
+
+    /* Ombre */
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Image */
+
+.carte img{
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+}
+
+/* Contenu de la carte */
+
+.contenu-carte{
+    padding:15px;
+}
+
+/* Prix */
+
+.prix{
+    margin-top:10px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+/* Bouton */
+
+button{
+
+    background-color:black;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 15px;
+
+    cursor:pointer;
+
+    border-radius:5px;
+}
+
+/* Effet au survol */
+
+button:hover{
+    background-color:#333;
+}
+
+/* ==============================
+   SECTION TÉMOIGNAGES
+============================== */
+
+.temoignages{
+
+    display:grid;
+
+    /* 3 colonnes */
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    max-width:1100px;
+
+    margin:auto;
+}
+
+/* Carte témoignage */
+
+.temoignage{
+
+    background-color:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Nom de l'auteur */
+
+.auteur{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+/* ==============================
+   VERSION TABLETTE
+============================== */
+
+@media (max-width:992px){
+
+    .services{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .grille-produits{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .temoignages{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ==============================
+   VERSION MOBILE
+============================== */
+
+@media (max-width:600px){
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .grille-produits{
+        grid-template-columns:1fr;
+    }
+}

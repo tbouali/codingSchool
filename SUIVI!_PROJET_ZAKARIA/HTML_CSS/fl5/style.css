@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ddd;
+    padding:10px;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    display:flex;
+    gap:10px;
+}
+
+/* Colonnes */
+.left,
+.right{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+/* Style général des blocs */
+.box{
+    background:red;
+    color:white;
+    border:2px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+}
+
+/* Partie gauche */
+
+.top-box{
+    height:90px;
+}
+
+.group-vertical{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.small-box{
+    height:55px;
+}
+
+.group-horizontal{
+    display:flex;
+    gap:10px;
+}
+
+.group-horizontal .box{
+    flex:1;
+    height:190px;
+}
+
+/* Partie droite */
+
+.big-box{
+    height:190px;
+}
+
+.middle{
+    display:flex;
+    gap:10px;
+}
+
+.middle .box{
+    flex:1;
+    height:190px;
+}
+
+.bottom-box{
+    height:95px;
+}

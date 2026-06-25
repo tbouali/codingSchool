@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    /* Image + overlay sombre  le dégradé est uniforme (même couleur du début à la fin) ;
+       il sert simplement à créer une couche sombre au-dessus de l'image */
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("../assets/images/IMG-hero.jpg");
+
+    /* L'image couvre toute la section */
+    background-size: cover;
+
+    /* Centre l'image */
+    background-position: center;
+
+    /* Empêche la répétition */
+    background-repeat: no-repeat;
+
+    /* Flexbox pour centrer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Centre le texte */
+    text-align: center;
+}
+/* Contenu */
+.hero-contenu {
+    color: white;
+}
+
+/* Titre */
+.hero-contenu h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+
+    /* Ombre du texte */
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
+}
+
+/* Paragraphe */
+.hero-contenu p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+
+    background-color: #ff4d4d;
+    color: white;
+
+    padding: 15px 35px;
+
+    text-decoration: none;
+    font-size: 18px;
+
+    border-radius: 5px;
+
+    /* Ombre du bouton */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+
+    /* Animation douce */
+     transition: 0.3s;
+}
+
+/* Effet hover */
+.btn:hover {
+    background-color: #ff2a2a;
+
+    /* Le bouton remonte légèrement */
+    transform: translateY(-5px);
+
+    /* Ombre plus forte */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}

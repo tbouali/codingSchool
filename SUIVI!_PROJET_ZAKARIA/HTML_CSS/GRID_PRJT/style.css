@@ -1,0 +1,93 @@
+/* Réinitialisation */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ddd;
+    padding:10px;
+    font-family:Arial, sans-serif;
+}
+
+/* Conteneur principal */
+.container{
+    display:grid;
+
+    /* 2 colonnes de même largeur */
+    grid-template-columns: 1fr 1fr;
+
+    gap:10px;
+}
+
+/* Colonnes gauche et droite */
+.gauche,
+.droite{
+    display:grid;
+    gap:10px;
+}
+
+/* Style des blocs */
+.box{
+    background:red;
+    color:white;
+    border:2px solid white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+}
+
+/* Partie gauche */
+
+.gauche > .box{
+    height:90px;
+}
+
+.vertical{
+    display:grid;
+    gap:10px;
+}
+
+.vertical .box{
+    height:60px;
+}
+
+.horizontal{
+    display:grid;
+
+    /* 5 colonnes égales */
+    grid-template-columns: repeat(5, 1fr);
+
+    gap:10px;
+}
+
+.horizontal .box{
+    height:180px;
+}
+
+/* Partie droite */
+
+.grand{
+    height:190px;
+}
+
+.milieu{
+    display:grid;
+
+    /* 2 colonnes */
+    grid-template-columns: 1fr 1fr;
+
+    gap:10px;
+}
+
+.milieu .box{
+    height:190px;
+}
+
+.droite > .box:not(.grand){
+    height:95px;
+}
