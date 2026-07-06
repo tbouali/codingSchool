@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopWise</title>
+<link rel="stylesheet" href="public/css/style .css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+
+   <div class="topbar-left">
+    <span><i class="fa-solid fa-location-dot"></i> Trouver un magasin</span>
+    <span><i class="fa-solid fa-circle-info"></i> Support</span>
+     </div>
+
+    <!-- <div class="topbar-left"> -->
+      <!-- <span>&#128205; Find a Store</span> -->
+      <!-- <span>&#9432; Support</span> -->
+    <!-- </div> -->
+    <div class="topbar-right">Free delivery on orders over $75</div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#">&#128722; ShopWise</a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products, brands, and more...">
+      <button>Search</button>
+    </div>
+    <div class="header-icons">
+      <a href="#" class="icon">&#128100;</a>
+      <a href="#" class="icon badge" data-count="4">&#9825;</a>
+      <a href="#" class="icon badge" data-count="3">&#128722;</a>
+    </div>
+  </div>
+</header>
+
+<!-- Nav -->
+<nav class="main-nav">
+  <div class="container nav-inner">
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Category</a>
+    <a href="#">Product Details</a>
+    <a href="#">Cart</a>
+    <a href="#">Checkout</a>
+    <a href="#">Dropdown &#9662;</a>
+    <a href="#">Megamenu 1 &#9662;</a>
+    <a href="#">Megamenu 2 &#9662;</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">Curated Selection</span>
+      <h1>Discover What Defines Modern Living</h1>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Donec velit neque, auctor sit amet aliquam vel.</p>
+      <br><br><br>
+      <div class="hero-buttons">
+        <button class="btn-primary">Browse Items</button>
+        <button class="btn-secondary">&#8594; See All Categories</button>
+      </div>
+      <div class="hero-features">
+        <span>&#128230; Free Shipping</span>
+        <span>&#9989; Verified Quality</span>
+        <span>&#8617; Easy Returns</span>
+        <span>&#9200; 24/7 Support</span>
+      </div>
+    </div>
+
+    <div class="hero-cards">
+      <div class="hero-card">
+        <span class="tag">Best Seller</span>
+        <img src="./public/assets/images/SPACE-HUB.jpg" alt="Precision Audio Hub">
+        <p class="card-title">Precision Audio Hub</p>
+        <p class="price">$219 <s>$299</s></p>
+      </div>
+      <div class="hero-card">
+        <span class="tag">Trending Now</span>
+        <img src="./public/assets/images/Watch-intlg.jpg" alt="Smart Wearable Pro">
+        <p class="card-title">Smart Wearable Pro</p>
+        <p class="price">$159 <s>$229</s></p>
+      </div>
+      <div class="hero-card wide">
+        <span class="tag">Just Launched</span>
+        <div class="wide-inner">
+          <img src="public/assets/images/Essential Daily Companion_1.jpg" alt="Essential Daily Companion">
+          <div>
+            <p class="card-title">Essential Daily Companion</p>
+            <p class="desc">Proin eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus curabitur.</p>
+            <p class="price">$99 <s>$149</s></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product carousel -->
+  <div class="container carousel">
+    <button class="carousel-btn prev">&#10094;</button>
+    <div class="carousel-track">
+      <div class="product-card">
+        <img src="./public/assets/images/Ceramic Aroma Diffuse.jpg" alt="Ceramic Aroma Diffuser">
+        <div class="product-body">
+          <p class="product-title">Ceramic Aroma Diffuser</p>
+          <p class="product-desc">Pellentesque in ipsum id orci porta dapibus.</p>
+          <p class="price">$42 <s>$58</s></p>
+        </div>
+      </div>
+      <div class="product-card">
+        <span class="badge-tag">Sale</span>
+        <img src="./public/assets/images/Minimalist Wall Clock.jpg" alt="Minimalist Wall Clock">
+        <div class="product-body">
+          <p class="product-title">Minimalist Wall Clock</p>
+          <p class="product-desc">Mauris blandit aliquet elit eget tincidunt nibh.</p>
+          <p class="price">$37 <s>$55</s></p>
+        </div>
+      </div>
+      <div class="product-card">
+        <span class="badge-tag">Hot</span>
+        <img src="./public/assets/images/Wireless Charging Pad.jpg" alt="Wireless Charging Pad">
+        <div class="product-body">
+          <p class="product-title">Wireless Charging Pad</p>
+          <p class="product-desc">Vivamus suscipit tortor eget felis porttitor.</p>
+          <p class="price">$29 <s>$45</s></p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./public/assets/images/Portable Power Station.jpg" alt="Portable Power Station">
+        <div class="product-body">
+          <p class="product-title">Portable Power Station</p>
+          <p class="product-desc">Donec sollicitudin molestie malesuada cras.</p>
+          <p class="price">$175 <s>$240</s></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+  <div class="dots">
+    <span></span><span class="active"></span><span></span><span></span><span></span>
+  </div>
+</section>
+
+<!-- Lookbook -->
+<section class="lookbook">
+  <div class="container lookbook-grid">
+    <img class="lookbook-img" src="./public/assets/images/GroupProject-sect-3.png" alt="Winter Lookbook">
+    <div class="lookbook-text">
+      <span class="eyebrow">New Season</span>
+      <h2>Winter Lookbook</h2>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae ultricies eget.</p>
+      <ul>
+        <li>&#9989; Curated seasonal selections</li>
+        <li>&#9989; Exclusive online availability</li>
+        <li>&#9989; Complimentary shipping included</li>
+      </ul>
+      <button class="btn-primary">Explore Collection &#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="categories">
+  <div class="container categories-grid">
+    <div class="category-card">
+      <img src="./public/assets/images/cristofer-H.jpg" alt="Modern Menswear">
+      <p class="cat-title">Modern Menswear</p>
+      <p class="cat-count">245 products</p>
+      <a href="#">View All &#8594;</a>
+    </div>
+    <div class="category-card">
+      <img src="./public/assets/images/henman--.jpg" alt="Everyday Essentials">
+      <p class="cat-title">Everyday Essentials</p>
+      <p class="cat-count">189 products</p>
+      <a href="#">View All &#8594;</a>
+    </div>
+    <div class="category-card">
+      <img src="./public/assets/images/rtbtt.jpg" alt="Beauty Rituals">
+      <p class="cat-title">Beauty Rituals</p>
+      <p class="cat-count">112 products</p>
+      <a href="#">View All &#8594;</a>
+    </div>
+    <div class="category-card">
+      <img src="./public/assets/images/equip-voy.jpg" alt="Travel Gear">
+      <p class="cat-title">Travel Gear</p>
+      <p class="cat-count">327 products</p>
+      <a href="#">View All &#8594;</a>
+    </div>
+  </div>
+</section>
+
+<!-- Best Sellers -->
+<section class="best-sellers">
+  <div class="container">
+    <h2 class="section-title">Best Sellers</h2>
+    <p class="section-subtitle">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+
+    <div class="products-grid">
+      <div class="shop-card">
+        <div class="shop-img">
+          <span class="badge-tag">Limited Edition</span>
+          <img src="./public/assets/images/chauss-f.jpg" alt="Heels">
+        </div>
+        <div class="shop-body">
+          <p class="shop-meta">PREMIUM COLLECTION &#9733; 4.2 (24)</p>
+          <p class="shop-title">Donec sollicitudin molestie malesuada viverra</p>
+          <div class="swatches"><span style="background:#3b82c4"></span><span style="background:#e0b84a"></span><span style="background:#d94f4f"></span></div>
+          <div class="shop-footer">
+            <p class="price">$149.00</p>
+            <button class="icon-btn">&#128247;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <div class="shop-img">
+          <span class="badge-tag red">25% Off</span>
+          <img src="./public/assets/images/basket.jpg" alt="Sneaker">
+        </div>
+        <div class="shop-body">
+          <p class="shop-meta">BEST SELLER &#9733; 4.7 (58)</p>
+          <p class="shop-title">Pellentesque in ipsum lacinia orci rutrum</p>
+          <div class="swatches"><span style="background:#222"></span><span style="background:#e0b84a"></span><span style="background:#7a4fd9"></span></div>
+          <div class="shop-footer">
+            <p class="price"><s>$220.00</s> $165.00</p>
+            <button class="icon-btn">&#128247;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <div class="shop-img">
+          <span class="badge-tag">New Arrival</span>
+          <img src="./public/assets/images/chauss-courss.jpg" alt="Running Shoe">
+        </div>
+        <div class="shop-body">
+          <p class="shop-meta">NEW ARRIVAL &#9733; 3.8 (12)</p>
+          <p class="shop-title">Quisque velit nisi premium ut lacinia</p>
+          <div class="swatches"><span style="background:#d94f4f"></span><span style="background:#2fa39a"></span><span style="background:#2f6bd9"></span></div>
+          <div class="shop-footer">
+            <p class="price">$89.00</p>
+            <button class="icon-btn">&#128247;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <div class="shop-img">
+          <span class="badge-tag">Trending</span>
+          <img src="./public/assets/images/chaiz.jpg" alt="Chair">
+        </div>
+        <div class="shop-body">
+          <p class="shop-meta">EDITOR'S PICK &#9733; 4.9 (71)</p>
+          <p class="shop-title">Sed porttitor lectus nibh vivamus magna</p>
+          <div class="swatches"><span style="background:#666"></span><span style="background:#7a4fd9"></span><span style="background:#e0824a"></span></div>
+          <div class="shop-footer">
+            <p class="price">$199.00</p>
+            <button class="icon-btn">&#128247;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trending tabs -->
+    <div class="tabs">
+      <span class="tab active">&#128293; Trending Now</span>
+      <span class="tab">&#9733; Highest Rated</span>
+      <span class="tab">&#9997; Hand-Picked</span>
+    </div>
+
+    <div class="products-grid">
+      <div class="shop-card">
+        <div class="shop-img">
+          <span class="badge-tag">New</span>
+          <img src="public/assets/images/Handcrafted Tote.jpg" alt="Tote Bag">
+        </div>
+        <div class="shop-body">
+          <p class="shop-meta">&#9733; 4.5 (91)</p>
+          <p class="shop-title">Handcrafted Tote</p>
+          <div class="shop-footer">
+            <p class="price">$92.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="shop-card">
+        <div class="shop-img">
+          <img src="public/assets/images/Parure de clous d'oreilles en saphir.jpg" alt="clousafir">
+        </div>
+        <div class="shop-body">
+          <p class="shop-meta">&#9733; 5.0 (33)</p>
+          <p class="shop-title">Sapphire Stud Set</p>
+          <div class="shop-footer">
+            <p class="price">$44.50</p>
+          </div>
+        </div>
+      </div>
+      <div class="shop-card">
+        <div class="shop-img">
+          <img src="public/assets/images/Haut en coton tissé.jpg" alt="coton-tissé">
+        </div>
+        <div class="shop-body">
+          <p class="shop-meta">&#9733; 4.0 (22)</p>
+          <p class="shop-title">Cotton Weave Top</p>
+          <div class="shop-footer">
+            <p class="price">$49.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="shop-card">
+        <div class="shop-img">
+          <span class="badge-tag red">-15%</span>
+          <img src="public/assets/images/pochette bandoulière tressée.jpg" alt="Pochette-tressé">
+        </div>
+        <div class="shop-body">
+          <p class="shop-meta">&#9733; 4.7 (46)</p>
+          <p class="shop-title">Woven Crossbody Pouch</p>
+          <div class="shop-footer">
+            <p class="price">$68.00 <s>$80.00</s></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Offers -->
+<section class="offers">
+  <div class="container offers-top">
+    <div class="offers-info">
+      <span class="eyebrow light">&#9889; Flash Sale — Up to 60% Off</span>
+      <h2>Exclusive Offers Just for You</h2>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Don't miss these limited-time savings.</p>
+    </div>
+    <div class="countdown">
+      <span class="label">&#8987; Ends in:</span>
+      <div class="countdown-boxes">
+        <div><strong>232</strong><small>Days</small></div>
+        <div><strong>16</strong><small>Hours</small></div>
+        <div><strong>12</strong><small>Minutes</small></div>
+        <div><strong>38</strong><small>Seconds</small></div>
+      </div>
+      <button class="btn-primary">Claim Offer &#8594;</button>
+      <button class="btn-outline">View All Items</button>
+    </div>
+  </div>
+
+  <div class="container offers-grid">
+    <div class="offer-card">
+      <span class="badge-tag green">-45%</span>
+      <img src="public/assets/images/Premium Wireless Headphones.jpg" alt="Premium Wireless Headphones">
+      <p class="shop-meta light">&#9733;&#9733;&#9733;&#9733; (312)</p>
+      <p class="offer-title">Premium Wireless Headphones</p>
+      <p class="price light"><s>$129</s> $98</p>
+      <button class="btn-outline small">&#128722; Add to Cart</button>
+    </div>
+    <div class="offer-card">
+      <span class="badge-tag green">-50%</span>
+      <img src="public/assets/images/Smart Fitness Tracker Pro.jpg" alt="Smart Fitness Tracker Pro">
+      <p class="shop-meta light">&#9733;&#9733;&#9733;&#9733; (478)</p>
+      <p class="offer-title">Smart Fitness Tracker Pro</p>
+      <p class="price light"><s>$120</s> $60</p>
+      <button class="btn-outline small">&#128722; Add to Cart</button>
+    </div>
+    <div class="offer-card">
+      <span class="badge-tag green">-35%</span>
+      <img src="public/assets/images/Lightweight Travel Backpack.jpg" alt="Lightweight Travel Backpack">
+      <p class="shop-meta light">&#9733;&#9733;&#9733;&#9733; (189)</p>
+      <p class="offer-title">Lightweight Travel Backpack</p>
+      <p class="price light"><s>$210</s> $136</p>
+      <button class="btn-outline small">&#128722; Add to Cart</button>
+    </div>
+    <div class="offer-card">
+      <span class="badge-tag green">-55%</span>
+      <img src="public/assets/images/Artisan Porcelain Collection.jpg" alt="Artisan Porcelain Collection">
+      <p class="shop-meta light">&#9733;&#9733;&#9733;&#9733;&#9733; (245)</p>
+      <p class="offer-title">Artisan Porcelain Collection</p>
+      <p class="price light"><s>$95</s> $43</p>
+      <button class="btn-outline small">&#128722; Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+  <div class="container">
+    <h2>Join Our Newsletter</h2>
+    <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Your email address">
+      <button class="btn-primary">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <p class="logo">ShopWise</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula, facilisis magna ut, consectetur ex.</p>
+      <!-- <p>&#128205; 123 Fashion Street, New York 10001</p> -->
+      <p><i class="fa-solid fa-location-dot"></i> 123 Fashion Street, New York 10001</p>
+         <!-- <p>&#128222; +1 (555) 123-4567</p> -->
+         <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+      <p><i class="fa-solid fa-envelope"></i> hello@example.com</p>
+      <!-- <p>&#9993; hello@example.com</p> -->
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#">New Arrivals</a>
+      <a href="#">Bestsellers</a>
+      <a href="#">Women's Clothing</a>
+      <a href="#">Men's Clothing</a>
+      <a href="#">Accessories</a>
+      <a href="#">Sale</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Order Status</a>
+      <a href="#">Shipping Info</a>
+      <a href="#">Returns &amp; Exchanges</a>
+      <a href="#">Size Guide</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Press</a>
+      <a href="#">Affiliates</a>
+      <a href="#">Responsibility</a>
+      <a href="#">Investors</a>
+    </div>
+    <div class="footer-col">
+      <h4>Download Our App</h4>
+      <p>Shop on the go with our mobile app</p>
+      <div class="store-buttons">
+        <span>&#63743; App Store</span>
+        <span>&#9654; Google Play</span>
+      </div>
+      <h4>Follow Us</h4>
+      <!-- <div class="social-icons"> -->
+        <!-- <span>f</span><span>ig</span><span>x</span><span>tt</span><span>p</span><span>yt</span> -->
+      <!-- </div> -->
+      <!-- vrais icons  -->
+     <div class="social-icons">
+     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+     <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+     <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+     <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+     <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <!-- fin icons  -->
+    </div>
+  </div>
+  <div class="footer-bottom">
+     <div class="footer-bottom-inner">
+
+    <!-- 1ère ligne -->
+    <div class="footer-top">
+        <p class="accept-text">We Accept:</p>
+        <div class="accept-icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-brands fa-apple-pay"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-solid fa-warehouse"></i>
+            <i class="fa-solid fa-camera"></i>
+        </div>
+    </div>
+    <!-- 2ème ligne -->
+    <div class="footer-links">
+        <span>Terms of Services</span>
+        <span>Privacy Policy</span>
+        <span>Cookies Setting</span>
+    </div>
+    <!-- 3ème ligne -->
+    <div class="footer-copy">
+        <p>&copy; Copyright ShopWise All Rights Reserved.</p>
+         
+         <p> Designed by  <span class="vert">BootstrapMade</span><p>
+    </div>
+
+</div>
+
+    <!-- ---------------------------------------------                                                     -->
+    <!-- <div class="container footer-bottom-inner"> -->
+      <!-- <p>We Accept:</p> -->
+      <!-- <p>&#169; Copyright ShopWise. All Rights Reserved.<br>Designed by BootstrapMade</p> -->
+     <!-- <p>&copy;  Copyright ShopWise. All Rights Reserved.<br>Designed by BootstrapMade</p> -->
+      <!-- <p>&copy; Copyright <span class="vert">BootstrapMade</span>. All Rights Reserved.</p> -->
+        <!-- <div class="Accept-icons"> -->
+        <!-- <a href="#"><i class="fa-brands fa-cc-visa"></i></a>  -->
+        <!-- <a href="#"><i class="fa-brands fa-paypal"></i></a> -->
+        <!-- <a href="#"><i class="fa-brands fa-apple-pay"></i></a> -->
+        <!-- <a href="#"><i class="fa-brands fa-google"></i></a> -->
+         <!-- <a href="#"><i class="fa-solid fa-warehouse"></i></a> -->
+        <!-- <a href="#"><i class="fa-solid fa-camera"></i></a> <br><br> -->
+          <!-- <span>Terms of Services</span>      <span>Prvaty Policy</span>           <span>Cookies Setting </span>   -->
+    <!-- </div> -->
+  </div>
+   <!-- début code  -->
+<!--          -->
+
+
+
+
+
+
+
+
+<!-- fin code  -->
+</footer>
+<!-- <button class="scroll-top">↑</button> -->
+<button class="scroll-top">&#8593;</button>
+
+</body>
+</html>
