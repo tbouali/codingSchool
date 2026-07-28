@@ -1,4 +1,3 @@
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -401,6 +400,13 @@ li i {
   .hero-card.wide { grid-column: span 2; }
   .wide-inner { flex-direction: column; align-items: flex-start; }
 
+  /* FIX : empiler texte + cartes du hero au lieu de rester côte à côte */
+  .hero-grid { grid-template-columns: 1fr; gap: 24px; }
+  .hero-text { margin-top: 0; }
+  .hero-text p { margin-top: 16px; }
+  .hero-buttons { margin-top: 20px; }
+  .hero-features { margin-top: 24px; }
+
   /* Carousel */
   .carousel { margin-top: 24px; }
   .carousel-track { grid-template-columns: repeat(2, 1fr); gap: 14px; }
@@ -410,6 +416,9 @@ li i {
   .lookbook { padding: 44px 0; }
   .lookbook-text h2 { font-size: 26px; }
 
+  /* FIX : empiler image + texte du lookbook au lieu de rester côte à côte */
+  .lookbook-grid { grid-template-columns: 1fr; gap: 24px; }
+
   /*Les catégories et les produits restent disposés par deux ; les espacements sont réduits*/
   .categories-grid { gap: 16px; }
   .category-card img { height: 200px; }
@@ -418,6 +427,11 @@ li i {
 /* unset : annule la valeur précédente de min-height et remet la propriété à sa valeur par défaut (ou héritée si la propriété est héritée) */
   .section-title { font-size: 26px; }
   .tabs { gap: 18px; flex-wrap: wrap; }
+
+  /* FIX : catégories & produits passent réellement à 2 colonnes dès la tablette
+     (auparavant restaient en 4 colonnes serrées jusqu'à 480px) */
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
 
   /* Offers */
   .offers-top { flex-direction: column; align-items: flex-start; gap: 24px; }
